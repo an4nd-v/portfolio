@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand V | Portfolio & Credentials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Header -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Anand V" class="profile-img">
+            <h1>Anand V</h1>
+            <p class="tagline">Computer Engineering | Electrical Trade & Industrial Fabrication Specialist</p>
+            <div class="badge-row">
+                <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Govt. ITI Pinarayi</span>
+                <span class="badge"><i class="fa-solid fa-award"></i> NCVET Certified</span>
+                <span class="badge"><i class="fa-solid fa-code"></i> Python Web Dev</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#credentials" class="btn btn-primary"><i class="fa-solid fa-certificate"></i> View Qualifications</a>
+                <a href="resume.pdf" target="_blank" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- About Me Section -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-user"></i> Professional Overview</h2>
+            <p class="about-text">
+                Multi-skilled technician and engineering scholar with verified credentials spanning <strong>Computer Engineering, Python Web Development, Electrical Systems (Electrician NSQF Level 5)</strong>, and <strong>Industrial Sheet Metal & Welding Fabrication</strong>. Experienced across hands-on trade apprenticeships, software projects, and official NCVET & DGET certifications.
+            </p>
+        </section>
+
+        <!-- Credentials & Certificates Grid -->
+        <section id="credentials" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-award"></i> Verified Certificates & Academic Records</h2>
+            <p class="section-desc">Click on any card to open the interactive verification window with full details and image preview.</p>
+
+            <div class="card-grid">
+
+                <!-- 1. NAC -->
+                <div class="card" onclick="openModal('modal-nac')">
+                    <div class="card-tag gold">National Apprenticeship</div>
+                    <h3>National Apprenticeship Certificate (NAC)</h3>
+                    <p class="issuer">Directorate General of Training (DGT) / NCVET</p>
+                    <p class="meta"><strong>Trade:</strong> Electrician | <strong>Score:</strong> 82.25%</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 2. Python Internship -->
+                <div class="card" onclick="openModal('modal-python')">
+                    <div class="card-tag blue">Software / Web Dev</div>
+                    <h3>Python Web Development Internship</h3>
+                    <p class="issuer">Nexus Technologies, Calicut</p>
+                    <p class="meta"><strong>Role:</strong> Python Intern | <strong>Period:</strong> May - Jun 2025</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 3. NTC Electrician -->
+                <div class="card" onclick="openModal('modal-ntc')">
+                    <div class="card-tag gold">National Trade</div>
+                    <h3>National Trade Certificate (NTC)</h3>
+                    <p class="issuer">Govt. ITI Pinarayi / DGT</p>
+                    <p class="meta"><strong>Trade:</strong> Electrician (NSQF Level 5) | <strong>Passed:</strong> Jul 2022</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 4. ITI Consolidated Marksheet -->
+                <div class="card" onclick="openModal('modal-iti-marks')">
+                    <div class="card-tag green">Academic Marksheet</div>
+                    <h3>ITI Consolidated Statement of Marks</h3>
+                    <p class="issuer">Craftsmen Training Scheme (CTS)</p>
+                    <p class="meta"><strong>Total Marks:</strong> 921 / 1300 | <strong>Result:</strong> Pass</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 5. Sheet Metal NSDC -->
+                <div class="card" onclick="openModal('modal-sheetmetal')">
+                    <div class="card-tag orange">Skill India / NSDC</div>
+                    <h3>Sheet Metal Worker (NSQF Level 3)</h3>
+                    <p class="issuer">Capital Goods Skill Council / NSDC</p>
+                    <p class="meta"><strong>Role:</strong> Panels, Cabins & Ducts | <strong>Issued:</strong> 2022</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 6. DDU-GKY Fabrication -->
+                <div class="card" onclick="openModal('modal-ddugky')">
+                    <div class="card-tag orange">Govt. Skill Program</div>
+                    <h3>DDU-GKY Fabrication Training</h3>
+                    <p class="issuer">Wayanad Social Service Society</p>
+                    <p class="meta"><strong>Trade:</strong> Sheet Metal, Gas & Arc Welder | <strong>Hours:</strong> 1663 Hrs</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 7. Welding Training -->
+                <div class="card" onclick="openModal('modal-welding')">
+                    <div class="card-tag purple">Industrial Training</div>
+                    <h3>Welding & Fabrication Certificate</h3>
+                    <p class="issuer">National Metal Industries, Kannur</p>
+                    <p class="meta"><strong>Duration:</strong> Feb 2020 – Mar 2020</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 8. Higher Secondary (HSE) -->
+                <div class="card" onclick="openModal('modal-hse')">
+                    <div class="card-tag green">Higher Secondary</div>
+                    <h3>Higher Secondary Certificate (HSE)</h3>
+                    <p class="issuer">Board of Higher Secondary Examinations, Kerala</p>
+                    <p class="meta"><strong>Stream:</strong> Commerce | <strong>Passed:</strong> March 2019</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+                <!-- 9. SSLC -->
+                <div class="card" onclick="openModal('modal-sslc')">
+                    <div class="card-tag green">Secondary School</div>
+                    <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                    <p class="issuer">General Education Dept, Govt. of Kerala</p>
+                    <p class="meta"><strong>School:</strong> GHSS Chittariparamba | <strong>Passed:</strong> March 2017</p>
+                    <button class="card-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inspect Details</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODALS SECTION -->
+
+    <!-- Modal 1: NAC -->
+    <div id="modal-nac" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-nac')">&times;</span>
+            <h2>National Apprenticeship Certificate (NAC)</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Anand V</li>
+                        <li><strong>Cert No:</strong> AYKLB000100000-050117</li>
+                        <li><strong>Registration No:</strong> A0922189713</li>
+                        <li><strong>Contract No:</strong> CN042353592</li>
+                        <li><strong>Establishment:</strong> KSEB Ltd Division IRITTY</li>
+                        <li><strong>Trade:</strong> Electrician (NSQF Level 5)</li>
+                        <li><strong>Training Period:</strong> 10-03-2023 to 09-03-2024</li>
+                        <li><strong>Result:</strong> 82.25% (AITT for Apprentices, Apr 2024)</li>
+                        <li><strong>Issue Date:</strong> 28-10-2024 (New Delhi)</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/nac.jpg" alt="NAC Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Python Internship -->
+    <div id="modal-python" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-python')">&times;</span>
+            <h2>Python Web Development Internship Certificate</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Anand V (Reg No: 2301133416)</li>
+                        <li><strong>Institution:</strong> E K Nayanar Memorial Model Polytechnic College, Kallyasseri</li>
+                        <li><strong>Organization:</strong> Nexus Technologies, Calicut</li>
+                        <li><strong>Field:</strong> Internship Training in Python Web Development</li>
+                        <li><strong>Duration:</strong> 10th May 2025 to 07th June 2025</li>
+                        <li><strong>Date of Issue:</strong> 07.06.2025</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/python.jpg" alt="Python Internship Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: NTC Electrician -->
+    <div id="modal-ntc" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-ntc')">&times;</span>
+            <h2>National Trade Certificate (NTC) - Electrician</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Anand V</li>
+                        <li><strong>Reg No:</strong> R200832008788</li>
+                        <li><strong>Certificate No:</strong> 223240000000455</li>
+                        <li><strong>Institute:</strong> Govt. ITI Pinarayi, Kannur, Kerala</li>
+                        <li><strong>Trade:</strong> Electrician (NSQF Level 5)</li>
+                        <li><strong>Session:</strong> Aug 2020 – Jul 2022</li>
+                        <li><strong>Issue Date:</strong> 07-Sep-2022</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/ntc.jpg" alt="NTC Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: ITI Consolidated Marksheet -->
+    <div id="modal-iti-marks" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-iti-marks')">&times;</span>
+            <h2>ITI Consolidated Statement of Marks</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Roll No / Reg No:</strong> 00200832008788 / R200832008788</li>
+                        <li><strong>Trade:</strong> Electrician (NSQF Level 5)</li>
+                        <li><strong>Year 1 Total:</strong> 505 / 700</li>
+                        <li><strong>Year 2 Total:</strong> 416 / 600</li>
+                        <li><strong>Grand Total:</strong> 921 / 1300</li>
+                        <li><strong>Result:</strong> Pass</li>
+                        <li><strong>Issue Date:</strong> 13 Sep 2022</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/iti_marks.jpg" alt="ITI Marksheet">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Sheet Metal NSDC -->
+    <div id="modal-sheetmetal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-sheetmetal')">&times;</span>
+            <h2>Sheet Metal Worker (NSDC / Skill India)</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Anand V</li>
+                        <li><strong>Role:</strong> Sheet Metal Worker (Panels, Cabins & Ducts) (FAB209)</li>
+                        <li><strong>Qualification Framework:</strong> NSQF Level - 3</li>
+                        <li><strong>Issued By:</strong> Capital Goods Skill Council</li>
+                        <li><strong>Training Centre:</strong> Wayanad Social Service Society</li>
+                        <li><strong>Date of Issuance:</strong> 28/06/2022</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/sheetmetal.jpg" alt="Sheet Metal NSDC Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: DDU-GKY Fabrication -->
+    <div id="modal-ddugky" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-ddugky')">&times;</span>
+            <h2>DDU-GKY Certificate of Completion in Fabrication</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Anand V</li>
+                        <li><strong>Cert No:</strong> WSSSP6199</li>
+                        <li><strong>Candidate ID:</strong> C03255711496273</li>
+                        <li><strong>Trade:</strong> Sheet Metal Worker, Gas & Arc Welder</li>
+                        <li><strong>Training Hours:</strong> 1663 Hours</li>
+                        <li><strong>Duration:</strong> 08/07/2019 to 15/02/2020</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/ddugky.jpg" alt="DDU GKY Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Welding Training -->
+    <div id="modal-welding" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-welding')">&times;</span>
+            <h2>Industrial Welding & Fabrication Training Certificate</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Mr. Anand</li>
+                        <li><strong>Organization:</strong> National Metal Industries, Kannur</li>
+                        <li><strong>Training Scope:</strong> Welding and Fabrication Work</li>
+                        <li><strong>Duration:</strong> Feb 17th 2020 to March 22nd 2020</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/welding.jpg" alt="National Metal Industries Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Higher Secondary (HSE) -->
+    <div id="modal-hse" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-hse')">&times;</span>
+            <h2>Higher Secondary Examination Certificate (HSE)</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Anand V</li>
+                        <li><strong>Register No:</strong> 6400901</li>
+                        <li><strong>Group:</strong> Commerce</li>
+                        <li><strong>Session:</strong> March 2019</li>
+                        <li><strong>Malayalam Grade:</strong> A+ (184/200)</li>
+                        <li><strong>English Grade:</strong> C (87/200)</li>
+                        <li><strong>Computer Application Grade:</strong> C+ (118/200)</li>
+                        <li><strong>Result:</strong> Eligible for Higher Studies</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/hse.jpg" alt="HSE Marklist">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9: SSLC -->
+    <div id="modal-sslc" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-sslc')">&times;</span>
+            <h2>Secondary School Leaving Certificate (SSLC)</h2>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <ul>
+                        <li><strong>Candidate Name:</strong> Anand V</li>
+                        <li><strong>Register No:</strong> 512044</li>
+                        <li><strong>School:</strong> GHSS Chittariparamba</li>
+                        <li><strong>Information Technology:</strong> Grade A</li>
+                        <li><strong>Malayalam Paper II:</strong> Grade B+</li>
+                        <li><strong>English:</strong> Grade B+</li>
+                        <li><strong>Passed Date:</strong> March 2017</li>
+                    </ul>
+                </div>
+                <div class="modal-img-container">
+                    <img src="certificates/sslc.jpg" alt="SSLC Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
