@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand V | Portfolio & Credentials</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Updated Font Awesome to 6.5.1 for fa-x-twitter support -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -13,13 +14,20 @@
     <header class="hero">
         <div class="hero-content">
             <img src="profile.jpg" alt="Anand V" class="profile-img">
-            <h1>Anand V</h1>
-            <p class="tagline">Computer Engineering | Electrical Trade & Industrial Fabrication Specialist</p>
-            <div class="badge-row">
-                <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Govt. ITI Pinarayi</span>
-                <span class="badge"><i class="fa-solid fa-award"></i> NCVET Certified</span>
-                <span class="badge"><i class="fa-solid fa-code"></i> Python Web Dev</span>
+            <h1>Anand V</h1><!-- Inside <header class="hero"> -> <div class="hero-content"> -->
+            <p class="tagline">Computer Engineering Diploma | Electrician (NSQF Level 5) | Qualified Fabrication & Welding Specialist</p>
+            <!-- Social Media & Quick Contact Bar -->
+            <div class="social-links">
+                <a href="mailto:anandkannavam@gmail.com" title="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:7306850933" title="Call" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://github.com/an4nd-v" target="_blank" title="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anand-v" target="_blank" title="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_.an4nd._" target="_blank" title="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/anandkannavam" target="_blank" title="Facebook" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/AnandV730" target="_blank" title="X (Twitter)" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="javascript:void(0)" onclick="openModal('modal-map')" title="Current Location" class="social-icon location-badge"><i class="fa-solid fa-location-dot"></i></a>
             </div>
+            
             <div class="hero-actions">
                 <a href="#credentials" class="btn btn-primary"><i class="fa-solid fa-certificate"></i> View Qualifications</a>
                 <a href="resume.pdf" target="_blank" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
@@ -33,7 +41,7 @@
         <section class="section">
             <h2 class="section-title"><i class="fa-solid fa-user"></i> Professional Overview</h2>
             <p class="about-text">
-                Multi-skilled technician and engineering scholar with verified credentials spanning <strong>Computer Engineering, Python Web Development, Electrical Systems (Electrician NSQF Level 5)</strong>, and <strong>Industrial Sheet Metal & Welding Fabrication</strong>. Experienced across hands-on trade apprenticeships, software projects, and official NCVET & DGET certifications.
+                Computer Engineering student and multi-skilled technician with verified credentials spanning <strong>Computer Engineering, Python Web Development, Electrical Systems (Electrician NSQF Level 5)</strong>, and <strong>Industrial Sheet Metal & Welding Fabrication</strong>. Hands-on experience across technical apprenticeships, software builds, and official NCVET & DGT certifications.
             </p>
         </section>
 
@@ -128,9 +136,88 @@
             </div>
         </section>
 
+        <!-- Dedicated Contact Section -->
+        <section class="section contact-section">
+            <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Get In Touch</h2>
+            <p class="section-desc">Feel free to reach out for collaborations, technical projects, or inquiries.</p>
+            <div class="contact-cards">
+                <a href="mailto:anandkannavam@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>anandkannavam@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:7306850933" class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 7306850933 / +91 8606238657</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" onclick="openModal('modal-map')" class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Click to View Map Location</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/anand-v" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>in/anand-v</p>
+                    </div>
+                </a>
+                <a href="https://github.com/an4nd-v" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/an4nd-v</p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/_.an4nd._" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p>@_.an4nd._</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
     </main>
 
+    <footer class="footer">
+        <p>&copy; 2026 Anand V. All rights reserved.</p>
+    </footer>
+
     <!-- MODALS SECTION -->
+
+    <!-- Location Map Modal -->
+    <div id="modal-map" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-map')">&times;</span>
+            <h2><i class="fa-solid fa-map-location-dot"></i> Current Location</h2>
+            <div class="modal-body">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3905.0865507421336!2d75.666833!3d11.8220833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDQ5JzE5LjUiTiA3NcKwNDAnMDAuNiJF!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="350" 
+                        style="border:0; border-radius:8px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div style="text-align: center; margin-top: 10px;">
+                    <a href="https://maps.app.goo.gl/cJWoVZbLUPMvYzBq8" target="_blank" class="btn btn-primary">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal 1: NAC -->
     <div id="modal-nac" class="modal">
