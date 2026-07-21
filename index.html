@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand V | Portfolio & Credentials</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Updated Font Awesome to 6.5.1 for fa-x-twitter support -->
+    <!-- Font Awesome CDN v6.5.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -14,8 +14,9 @@
     <header class="hero">
         <div class="hero-content">
             <img src="profile.jpg" alt="Anand V" class="profile-img">
-            <h1>Anand V</h1><!-- Inside <header class="hero"> -> <div class="hero-content"> -->
+            <h1>Anand V</h1>
             <p class="tagline">Computer Engineering Diploma | Electrician (NSQF Level 5) | Qualified Fabrication & Welding Specialist</p>
+            
             <!-- Social Media & Quick Contact Bar -->
             <div class="social-links">
                 <a href="mailto:anandkannavam@gmail.com" title="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
@@ -29,7 +30,7 @@
             </div>
             
             <div class="hero-actions">
-                <a href="#credentials" class="btn btn-primary"><i class="fa-solid fa-certificate"></i> View Qualifications</a>
+                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> View Projects</a>
                 <a href="resume.pdf" target="_blank" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
             </div>
         </div>
@@ -43,6 +44,60 @@
             <p class="about-text">
                 Computer Engineering student and multi-skilled technician with verified credentials spanning <strong>Computer Engineering, Python Web Development, Electrical Systems (Electrician NSQF Level 5)</strong>, and <strong>Industrial Sheet Metal & Welding Fabrication</strong>. Hands-on experience across technical apprenticeships, software builds, and official NCVET & DGT certifications.
             </p>
+        </section>
+
+        <!-- Featured Engineering Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-code"></i> Featured Engineering Projects</h2>
+            <p class="section-desc">Key technical projects developed using computer vision, embedded systems, and web technologies.</p>
+
+            <div class="card-grid">
+
+                <!-- Project 1: Smart Attendance System -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="card-tag blue">Hardware & AI</span>
+                        <h3>Smart Attendance System</h3>
+                    </div>
+                    <p class="project-desc">
+                        An automated attendance logging system built using a Raspberry Pi and camera setup. It utilizes computer vision to recognize registered faces in real time and automatically log attendance records.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">Raspberry Pi</span>
+                        <span class="tech-badge">Linux</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/an4nd-v" target="_blank" class="btn btn-outline btn-sm">
+                            <i class="fa-brands fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Campus Information Web Portal -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="card-tag green">Web Development</span>
+                        <h3>Campus Information Web Portal</h3>
+                    </div>
+                    <p class="project-desc">
+                        A web platform designed to streamline campus updates, department notices, and student resources through an intuitive UI and database management.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/an4nd-v" target="_blank" class="btn btn-outline btn-sm">
+                            <i class="fa-brands fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!-- Credentials & Certificates Grid -->
@@ -136,7 +191,7 @@
             </div>
         </section>
 
-        <!-- Dedicated Contact Section -->
+        <!-- Contact Section -->
         <section class="section contact-section">
             <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Get In Touch</h2>
             <p class="section-desc">Feel free to reach out for collaborations, technical projects, or inquiries.</p>
