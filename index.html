@@ -36,15 +36,15 @@
             <h1>Anand V</h1>
             <p class="tagline">Computer Engineering Diploma | Electrician (NSQF Level 5) | Qualified Fabrication & Welding Specialist</p>
             
-            <!-- Social Media & Quick Contact Bar -->
+            <!-- Social Media & Quick Contact Bar (Redirects on Click) -->
             <div class="social-links">
-                <a href="mailto:anandkannavam@gmail.com" title="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
                 <a href="tel:7306850933" title="Call" class="social-icon"><i class="fa-solid fa-phone"></i></a>
-                <a href="https://github.com/an4nd-v" target="_blank" title="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/anand-v" target="_blank" title="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/_.an4nd._" target="_blank" title="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/anandkannavam" target="_blank" title="Facebook" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://x.com/AnandV730" target="_blank" title="X (Twitter)" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="javascript:void(0)" onclick="openModal('modal-email')" title="Send Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/an4nd-v" target="_blank" rel="noopener noreferrer" title="GitHub Profile" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anand-v" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_.an4nd._" target="_blank" rel="noopener noreferrer" title="Instagram Profile" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/anandkannavam" target="_blank" rel="noopener noreferrer" title="Facebook Profile" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/AnandV730" target="_blank" rel="noopener noreferrer" title="X (Twitter) Profile" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="javascript:void(0)" onclick="openModal('modal-map')" title="Current Location" class="social-icon location-badge"><i class="fa-solid fa-location-dot"></i></a>
             </div>
             
@@ -88,7 +88,7 @@
                         <span class="tech-badge">Linux</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/an4nd-v" target="_blank" class="btn btn-outline btn-sm">
+                        <a href="https://github.com/an4nd-v" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                             <i class="fa-brands fa-github"></i> View Repository
                         </a>
                     </div>
@@ -110,7 +110,7 @@
                         <span class="tech-badge">SQL</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/an4nd-v" target="_blank" class="btn btn-outline btn-sm">
+                        <a href="https://github.com/an4nd-v" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                             <i class="fa-brands fa-github"></i> View Repository
                         </a>
                     </div>
@@ -210,53 +210,60 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Section with Action Buttons -->
         <section class="section contact-section">
             <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Get In Touch</h2>
-            <p class="section-desc">Feel free to reach out for collaborations, technical projects, or inquiries.</p>
+            <p class="section-desc">Click on any card below to connect, message, or view details.</p>
             <div class="contact-cards">
-                <a href="mailto:anandkannavam@gmail.com" class="contact-card">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>anandkannavam@gmail.com</p>
-                    </div>
-                </a>
+                
                 <a href="tel:7306850933" class="contact-card">
                     <i class="fa-solid fa-phone"></i>
                     <div>
-                        <h4>Phone</h4>
-                        <p>+91 7306850933</p>
+                        <h4>Phone Call</h4>
+                        <p>7306850933</p>
                     </div>
                 </a>
+
+                <a href="javascript:void(0)" onclick="openModal('modal-email')" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email Contact</h4>
+                        <p>Click to Compose Email</p>
+                    </div>
+                </a>
+
                 <a href="javascript:void(0)" onclick="openModal('modal-map')" class="contact-card">
                     <i class="fa-solid fa-location-dot"></i>
                     <div>
                         <h4>Location</h4>
-                        <p>Click to View Map Location</p>
+                        <p>Click to View Google Maps</p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/anand-v" target="_blank" class="contact-card">
+
+                <a href="https://www.linkedin.com/in/anand-v" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <i class="fa-brands fa-linkedin"></i>
                     <div>
                         <h4>LinkedIn</h4>
-                        <p>in/anand-v</p>
+                        <p>Click to Open Profile</p>
                     </div>
                 </a>
-                <a href="https://github.com/an4nd-v" target="_blank" class="contact-card">
+
+                <a href="https://github.com/an4nd-v" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <i class="fa-brands fa-github"></i>
                     <div>
                         <h4>GitHub</h4>
-                        <p>github.com/an4nd-v</p>
+                        <p>Click to Open Repositories</p>
                     </div>
                 </a>
-                <a href="https://www.instagram.com/_.an4nd._" target="_blank" class="contact-card">
+
+                <a href="https://www.instagram.com/_.an4nd._" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <i class="fa-brands fa-instagram"></i>
                     <div>
                         <h4>Instagram</h4>
-                        <p>@_.an4nd._</p>
+                        <p>Click to Open Profile</p>
                     </div>
                 </a>
+
             </div>
         </section>
 
@@ -267,6 +274,20 @@
     </footer>
 
     <!-- MODALS SECTION -->
+
+    <!-- Email Modal -->
+    <div id="modal-email" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-email')">&times;</span>
+            <h2><i class="fa-solid fa-envelope"></i> Send Email</h2>
+            <div class="modal-body" style="text-align: center; padding: 20px 0;">
+                <p style="margin-bottom: 20px; color: #cbd5e1;">Click below to send an email inquiry directly:</p>
+                <a href="mailto:anandkannavam@gmail.com" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i> Launch Email App
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Location Map Modal -->
     <div id="modal-map" class="modal">
@@ -284,8 +305,8 @@
                         loading="lazy">
                     </iframe>
                 </div>
-                <div style="text-align: center; margin-top: 10px;">
-                    <a href="https://maps.app.goo.gl/cJWoVZbLUPMvYzBq8" target="_blank" class="btn btn-primary">
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="https://maps.app.goo.gl/cJWoVZbLUPMvYzBq8" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps App
                     </a>
                 </div>
