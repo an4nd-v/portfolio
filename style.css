@@ -326,6 +326,12 @@ body {
     margin-bottom: 0.75rem;
 }
 
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.5rem;
+}
+
 .card {
     background: linear-gradient(145deg, #161f30 0%, #0b0f19 100%);
     border: 1px solid var(--border-color);
@@ -639,6 +645,14 @@ body {
    DESKTOP SCREEN BREAKPOINTS
    ========================================================================== */
 @media (min-width: 768px) {
+    /* Center standalone or last grid items (e.g., SSLC card) in credentials section */
+    .credentials-grid .card:last-child {
+        grid-column: 1 / -1;   /* Span full width */
+        max-width: 380px;      /* Keep standard card width */
+        justify-self: center;  /* Center align horizontally */
+        width: 100%;
+    }
+
     .modal-body {
         flex-direction: row;
         align-items: flex-start;
