@@ -5,7 +5,7 @@
 
 // Protected Phone Number Data
 const maskedPhone = "+91 73••••••••";
-const realPhone = "+91 7306232616";
+const realPhone = "+91 7306850933";
 let isNumberRevealed = false;
 
 /**
@@ -42,9 +42,12 @@ function revealNumber() {
     const callLink = document.getElementById("call-link");
 
     if (!isNumberRevealed) {
+        // Format number for display (+91 73068 50933)
+        const formattedPhone = realPhone.replace(/(\+\d{2})(\d{5})(\d{5})/, '$1 $2 $3');
+
         // Reveal number
-        if (modalNumberText) modalNumberText.textContent = realPhone;
-        if (heroPhoneDisplay) heroPhoneDisplay.textContent = realPhone;
+        if (modalNumberText) modalNumberText.textContent = formattedPhone;
+        if (heroPhoneDisplay) heroPhoneDisplay.textContent = formattedPhone;
         
         if (callLink) {
             callLink.href = "tel:" + realPhone.replace(/\s+/g, '');
